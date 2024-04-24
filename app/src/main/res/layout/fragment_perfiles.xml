@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Número de documento -->
+        <EditText
+            android:id="@+id/editTextDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nro. Documento"
+            android:inputType="number"
+            android:layout_below="@id/editTextNombre"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/editTextDocumento"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Dirección -->
+        <EditText
+            android:id="@+id/editTextDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress"
+            android:layout_below="@id/editTextCorreo"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Celular -->
+        <EditText
+            android:id="@+id/editTextCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Celular"
+            android:inputType="phone"
+            android:layout_below="@id/editTextDireccion"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Fecha de nacimiento -->
+        <EditText
+            android:id="@+id/editTextFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento"
+            android:inputType="date"
+            android:layout_below="@id/editTextCelular"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/editTextContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_below="@id/editTextFechaNacimiento"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón para enviar el formulario -->
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_below="@id/editTextContraseña"/>
+
+    </RelativeLayout>
+</ScrollView>

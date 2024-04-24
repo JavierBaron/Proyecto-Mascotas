@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_item_one"
+            android:icon="@drawable/perfil"
+            android:title="Perfiles" />
+        <item
+            android:id="@+id/nav_item_two"
+            android:icon="@drawable/fotos"
+            android:title="Mascotas" />
+        <item
+            android:id="@+id/nav_item_three"
+            android:icon="@drawable/videos"
+            android:title="Tips" />
+        <item
+            android:id="@+id/nav_item_four"
+            android:icon="@drawable/internet"
+            android:title="Navegador" />
+        <item
+            android:id="@+id/nav_item_five"
+            android:icon="@drawable/controles"
+            android:title="Formulario" />
+    </group>
+
+</menu>
