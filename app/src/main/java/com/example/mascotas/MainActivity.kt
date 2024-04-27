@@ -45,32 +45,36 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId){
             //R.id.nav_item_one -> Toast.makeText(this, "item 1", Toast.LENGTH_SHORT).show()
             R.id.nav_item_one -> {
-                replaceFragmen(PerfilesFragment())
+                replaceFragment(PerfilesFragment())
                 updateToolbarTitle(getString(R.string.nav_item_one_title))
             }
             //R.id.nav_item_two -> Toast.makeText(this, "item 2", Toast.LENGTH_SHORT).show()
             R.id.nav_item_two -> {
-                replaceFragmen(MascotasFragment())
+                replaceFragment(MascotasFragment())
                 updateToolbarTitle(getString(R.string.nav_item_two_title))
             }
             R.id.nav_item_three -> {
                 //Toast.makeText(this, "item 3", Toast.LENGTH_SHORT).show()
-                replaceFragmen(TipsFragment())
+                replaceFragment(TipsFragment())
                 updateToolbarTitle(getString(R.string.nav_item_three_title))
             }
             R.id.nav_item_four -> {
-                replaceFragmen(NavegadorFragment())
+                replaceFragment(NavegadorFragment())
                 updateToolbarTitle(getString(R.string.nav_item_four_title))
             }
             R.id.nav_item_five -> {
-                replaceFragmen(FormularioFragment())
+                replaceFragment(FormularioFragment())
                 updateToolbarTitle(getString(R.string.nav_item_five_title))
+            }
+            R.id.nav_item_six -> {
+                replaceFragment(BotonesFuncionamiento())
+                updateToolbarTitle(getString(R.string.nav_item_six_title))
             }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
     }
-    private fun replaceFragmen(fragment: Fragment){
+    private fun replaceFragment(fragment: Fragment){
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment)
         transaction.commit()
@@ -79,15 +83,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         currentTitle = title
         supportActionBar?.title = currentTitle
     }
-
-    override fun onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)){
-            drawer.closeDrawer(GravityCompat.START)
-        }else{
-            onBackPressedDispatcher.onBackPressed()
-        }
-    }
-
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         toggle.syncState()

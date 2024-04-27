@@ -10,6 +10,15 @@
     <string name="nav_item_three_title">Tips</string>
     <string name="nav_item_four_title">Navegador</string>
     <string name="nav_item_five_title">Formulario</string>
-
+    <string name="nav_item_six_title">Botones</string>
+    <string name="nombre">Nombre</string>
+    <string name="nroDocumento">Nro. Documento</string>
+    <string name="correo">Correo</string>
+    <string name="direccion">Dirección</string>
+    <string name="celular">Celular</string>
+    <string name="fechaNacimiento">Fecha de Nacimiento</string>
+    <string name="password">Contraseña</string>
+    <string name="enviar">Enviar</string>
+    <string name="clickMe">Haz click para ver la descripción</string>
 
 </resources>
